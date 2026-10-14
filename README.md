@@ -7,4 +7,4 @@ Website, privacy policy, terms of service and data deletion page for **Nightsay:
 - Terms of Service: https://chartmann1590.github.io/nightsay-site/terms/
 - Delete your data: https://chartmann1590.github.io/nightsay-site/delete/
 
-Contact: me@charleshartmann.com
+Support: [open an issue](https://github.com/chartmann1590/nightsay-site/issues/new). Issues are public, so please don't post personal information.

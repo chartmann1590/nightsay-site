@@ -36,26 +36,38 @@
 <h1>Delete your data</h1>
 <p class="meta">Nightsay: Snore & Sleep Talk &middot; Developer: Hartmann Studios</p>
 
-<div class="callout"><strong>Nightsay has no accounts.</strong> There is no sign-up, so there is no account to delete. Your recordings and night data (including any Wear OS heart rate and movement readings) are stored on your devices, and we never receive them. You delete them directly on your device.</div>
+<div class="callout"><strong>Nightsay has no accounts.</strong> There is no sign-up, so there is no account to delete. Your recordings and night data (including transcripts, tags, AI summaries and any Wear OS heart rate and movement readings) are stored on your devices, and we never receive them. You delete them directly on your device.</div>
 
 <h2>Delete a clip or a night</h2>
 <ol>
 <li>Open Nightsay and go to the <strong>Nights</strong> tab.</li>
 <li>Open a night. To remove one recording, tap <strong>Delete clip</strong> next to it. To remove the whole night and all its clips, tap <strong>Delete night</strong>.</li>
 </ol>
-<p>Deleted clips and nights are removed from your phone immediately.</p>
+<p>Deleted clips and nights are removed from your phone immediately, together with that night's transcripts, tags and saved AI summary.</p>
+
+<h2>Delete the AI model</h2>
+<p>If you downloaded the on-device AI model (Qwen2.5 1.5B), open Nightsay &rarr; <strong>Settings</strong> &rarr; <strong>Delete model</strong>. This removes the model file and its cache from your phone. Gemini Nano, where your phone uses it, is part of Android and is managed by your phone's system, not by Nightsay.</p>
+
+<h2>Backup files you exported</h2>
+<p>Backup .zip files you exported are your own files. Delete them wherever you saved them: your phone's Files app, Google Drive or the cloud app you picked. We never receive them.</p>
+
+<h2>Health Connect</h2>
+<p>To stop new writes, turn off Health Connect in Nightsay's Settings, or remove Nightsay's permission in Health Connect. Sleep sessions Nightsay already wrote stay in Health Connect until you delete them there: open Health Connect (search for "Health Connect" in Android Settings, or open the Health Connect app), find Nightsay under its app permissions or data, and delete the sleep data it wrote. The exact menu names vary by Android version. Uninstalling Nightsay does not delete data already in Health Connect.</p>
+
+<h2>Shared cards, reels and clips</h2>
+<p>Anything you shared (a share card, highlight reel or clip) is held by the app or person you sent it to. Delete it there. Reels and share images that were made but not shared sit in the app's temporary cache and are removed when you clear the app's storage or uninstall it.</p>
 
 <h2>Delete everything</h2>
 <ul>
-<li><strong>Clear the app's storage:</strong> Android Settings &rarr; Apps &rarr; Nightsay &rarr; Storage &amp; cache &rarr; Clear storage. This deletes all recordings, night history and settings.</li>
-<li><strong>Or uninstall the app:</strong> uninstalling Nightsay deletes all of its recordings and data from your phone.</li>
+<li><strong>Clear the app's storage:</strong> Android Settings &rarr; Apps &rarr; Nightsay &rarr; Storage &amp; cache &rarr; Clear storage. This deletes all recordings, night history, transcripts, tags, streaks, badges, AI summaries, the downloaded AI model and settings.</li>
+<li><strong>Or uninstall the app:</strong> uninstalling Nightsay deletes everything it stored on your phone, including the AI model. It does not delete exported backup files, things you shared, data already written to Health Connect, or an Android Auto Backup copy in your Google account (see below).</li>
 </ul>
 
 <h2>What is kept, and for how long</h2>
 <ul>
-<li><strong>Recordings and night data:</strong> on your phone only, until you delete them or uninstall the app. On the free version, nights older than your last 3 are deleted automatically.</li>
+<li><strong>Recordings and night data:</strong> on your phone only (plus any backup you exported or Android backed up for you), until you delete them or uninstall the app. On the free version, nights older than your last 3 are deleted automatically.</li>
 <li><strong>Wear OS heart rate and movement:</strong> stored on your devices only (and in your own Android backup if you turn it on). On the free version, readings older than your last 3 nights are deleted automatically; uninstalling Nightsay from your phone and watch removes all of them. Turn off sensor access in your watch&#39;s Settings &rarr; Apps &rarr; Nightsay &rarr; Permissions.</li>
-<li><strong>Android backup:</strong> if you have Android backup turned on, Android may hold a backup of the app's settings and night data (night summaries and any watch readings, never audio) in your own Google account. You can delete it in your Google account's backup settings or the Google Drive app (Backups).</li>
+<li><strong>Android Auto Backup:</strong> if you have device backup turned on, Android may hold a backup of the nights database (night data, transcripts, tags and any watch readings), settings, badges and saved AI summaries in your own Google account. Recordings, the AI model, ad-consent files and widget layouts are never included. You can delete it in your Google account's backup settings or the Google Drive app (Backups), and turn device backup off in Android Settings.</li>
 <li><strong>Purchases:</strong> your Premium purchase record is kept by Google Play as part of your Google account. Cancel subscriptions in Google Play.</li>
 <li><strong>Advertising data:</strong> the free version's ads (Google AdMob) use your device's advertising ID. You can reset or delete it in Android Settings &rarr; Privacy &rarr; Ads. Google retains ad data under its own policies.</li>
 <li><strong>Support issues:</strong> if you opened a support issue on GitHub, you can delete or edit your own comments there, or <a href="https://github.com/chartmann1590/nightsay-site/issues/new">open an issue</a> titled "Nightsay data deletion" asking us to delete it and we will do so within 30 days. Please don't post personal data publicly in the request.</li>

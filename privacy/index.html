@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Privacy Policy | Nightsay</title>
-<meta name="description" content="Privacy policy for Nightsay: Snore &amp; Sleep Talk by Hartmann Studios: microphone use, on-device storage, AdMob ads, Google Play Billing, data deletion.">
+<meta name="description" content="Privacy policy for Nightsay: Snore &amp; Sleep Talk by Hartmann Studios: microphone use, on-device storage and AI, backups, Health Connect, AdMob ads, Google Play Billing, data deletion.">
 <link rel="canonical" href="https://chartmann1590.github.io/nightsay-site/privacy/">
 <meta name="theme-color" content="#0E1026">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Nightsay">
 <meta property="og:title" content="Privacy Policy | Nightsay">
-<meta property="og:description" content="Privacy policy for Nightsay: Snore &amp; Sleep Talk by Hartmann Studios: microphone use, on-device storage, AdMob ads, Google Play Billing, data deletion.">
+<meta property="og:description" content="Privacy policy for Nightsay: Snore &amp; Sleep Talk by Hartmann Studios: microphone use, on-device storage and AI, backups, Health Connect, AdMob ads, Google Play Billing, data deletion.">
 <meta property="og:url" content="https://chartmann1590.github.io/nightsay-site/privacy/">
 <meta property="og:image" content="https://chartmann1590.github.io/nightsay-site/img/og.png">
 <meta property="og:image:width" content="1200">
@@ -18,7 +18,7 @@
 <meta property="og:image:alt" content="Nightsay: snore and sleep talk recorder">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Privacy Policy | Nightsay">
-<meta name="twitter:description" content="Privacy policy for Nightsay: Snore &amp; Sleep Talk by Hartmann Studios: microphone use, on-device storage, AdMob ads, Google Play Billing, data deletion.">
+<meta name="twitter:description" content="Privacy policy for Nightsay: Snore &amp; Sleep Talk by Hartmann Studios: microphone use, on-device storage and AI, backups, Health Connect, AdMob ads, Google Play Billing, data deletion.">
 <meta name="twitter:image" content="https://chartmann1590.github.io/nightsay-site/img/og.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://chartmann1590.github.io/nightsay-site/img/icon-32.png">
 <link rel="apple-touch-icon" href="https://chartmann1590.github.io/nightsay-site/img/icon-180.png">
@@ -34,21 +34,57 @@
 
 <article class="doc wrap narrow">
 <h1>Privacy Policy</h1>
-<p class="meta">Effective date: October 14, 2026 &middot; App: Nightsay: Snore & Sleep Talk (package com.charles.nightsay) &middot; Developer: Hartmann Studios</p>
+<p class="meta">Effective date: October 14, 2026 &middot; Last updated: October 14, 2026 (version 1.1) &middot; App: Nightsay: Snore & Sleep Talk (package com.charles.nightsay) &middot; Developer: Hartmann Studios</p>
 
 <p>This policy explains what information the Nightsay: Snore & Sleep Talk app ("Nightsay", "the app") uses, why, and the choices you have. Nightsay is published on Google Play by Hartmann Studios ("we", "us"). If you have questions, <a href="https://github.com/chartmann1590/nightsay-site/issues/new">open an issue on GitHub</a>.</p>
 
-<div class="callout"><strong>The short version:</strong> Nightsay records audio with your microphone only while you are recording a night. Sound detection runs on your phone, and your recordings are stored only on your phone. We do not have servers that receive your audio, and we never see it. The free version shows ads from Google AdMob, which uses your device's advertising ID. There is no account. If you use the optional Wear OS app and allow it, your watch&#39;s heart rate and movement readings stay on your devices too and are never sent to us.</div>
+<div class="callout"><strong>The short version:</strong> Nightsay records audio with your microphone only while you are recording a night. Sound detection runs on your phone, and your recordings are stored only on your phone. We do not have servers that receive your audio, and we never see it. AI sleep summaries are written by a model running on your phone; the only outside contact for them is a one-time model download from huggingface.co on phones that use the downloadable model. Backups, share cards and highlight reels go only where you choose to send or save them, and Health Connect is optional and off by default. The free version shows ads from Google AdMob, which uses your device's advertising ID. There is no account. If you use the optional Wear OS app and allow it, your watch&#39;s heart rate and movement readings stay on your devices too and are never sent to us.</div>
 
 <h2 id="microphone">Microphone and your recordings</h2>
 <ul>
 <li><strong>When the microphone is used:</strong> only after you tap Start, and only until you tap Stop. While recording, Android shows a persistent notification and the microphone indicator. The app asks for the microphone permission before the first recording; you can revoke it at any time in Android Settings.</li>
 <li><strong>What is kept:</strong> the app listens continuously while recording, but keeps only short audio clips around detected sounds (such as snoring, talking, coughing or loud noises). The rest of the audio is discarded and is never written to storage.</li>
 <li><strong>On-device processing:</strong> sounds are classified by Google's YAMNet audio model, which runs entirely on your phone through Google's MediaPipe library. No audio is sent to us, to Google, or to anyone else for analysis.</li>
-<li><strong>On-device storage:</strong> clips and night summaries (start and end times, detected sound types, timestamps, confidence levels and your snore score) are stored in the app's private storage on your phone. Audio clips are excluded from Android cloud backups and device-to-device transfers. If Android backup is turned on, Android may back up the app's settings and night data (night summaries and any Wear OS readings, never audio) to your own Google account, under Google's control; we cannot access it, and you can turn this off in Android Settings.</li>
-<li><strong>Sharing is up to you:</strong> a clip leaves your phone only if you use the Share clip feature yourself (Premium) and choose an app to send it with. Whatever you share is then handled by the app or person you shared it with.</li>
+<li><strong>On-device storage:</strong> clips and night data (start and end times, detected sound types, timestamps, confidence levels, your Sleep Score and Snore Score, any transcripts, tags and saved AI summaries) are stored in the app's private storage on your phone. Audio clips are excluded from Android cloud backups and device-to-device transfers. See <a href="#auto-backup">Android Auto Backup</a> for what Android may back up to your own Google account.</li>
+<li><strong>Sharing is up to you:</strong> a clip leaves your phone only if you use the Share clip feature yourself (Premium) and choose an app to send it with. The same applies to share cards and highlight reels (see <a href="#sharing">Share cards and the weekly highlight reel</a>). Whatever you share is then handled by the app or person you shared it with.</li>
 <li><strong>Other people in the room:</strong> the app can pick up the voices of anyone near your phone. Please let people who sleep near you know you are recording.</li>
 </ul>
+
+
+<h2 id="transcribe">Transcribe and translate (Premium)</h2>
+<p>If you use Transcribe on a sleep-talk clip, the words are recognized by your phone's on-device speech recognizer (Android 13 or later) and stored with that night on your phone. Translation uses Google's ML Kit on-device translation; the language pack is downloaded once through Google Play services, and the text you translate stays on your phone. Nightsay does not send clips or transcripts to us or to a cloud speech service.</p>
+
+<h2 id="ai">On-device AI sleep summaries</h2>
+<p>Version 1.1 can write a short summary of your night (and, with Premium, a weekly story) using an AI model that runs on your phone. Which one you get depends on your phone:</p>
+<ul>
+<li><strong>Gemini Nano:</strong> on phones whose Android system offers Google's Gemini Nano through AICore, the app uses it. It runs on the phone; nothing is sent to us or to Google for this. Android manages Gemini Nano itself, including any download or update of it.</li>
+<li><strong>Downloadable model (Qwen2.5 1.5B Instruct):</strong> on other capable phones (64-bit, 6 GB of RAM or more, and enough free storage), you can download the open Qwen2.5 1.5B Instruct model (Apache 2.0 license, by the Qwen team) <strong>one time</strong> from <strong>huggingface.co</strong>, in a version prepared for phones (about 1.6 GB). Like any download, Hugging Face's servers see the request, including your IP address and your device's user agent; Hugging Face handles that under its <a href="https://huggingface.co/privacy">privacy policy</a>. Nothing about you or your nights is sent with the download. The file is checked against a fixed SHA-256 fingerprint before use, and after that the model runs entirely on your phone, offline. On first use the app also creates a cache file of about the same size on the phone so the model loads faster.</li>
+<li><strong>Smart insights:</strong> phones that can't run a model get rule-based "Smart insights" computed on the phone, with no download. Only text produced by an on-device model is labelled AI.</li>
+</ul>
+<p><strong>What goes into the model:</strong> the night's numbers only (for example your scores, time in bed, and the count and times of snores, talking and coughs). No audio and no transcripts are given to the model. The text it writes is saved on your phone with that night.</p>
+<p><strong>Deleting the model:</strong> Settings &rarr; Delete model removes the downloaded model and its cache from your phone. You can download it again later.</p>
+<p><strong>Accuracy:</strong> AI text is generated automatically and can be wrong. It is for wellness and fun, not medical advice.</p>
+
+<h2 id="on-device-features">Tags, experiments, streaks, badges and reminders</h2>
+<p>Nightly tags (such as coffee, drinks or a workout), tag patterns, 3-night snore experiments, streaks and badges are stored and calculated on your phone only. Patterns show what lines up with your scores; they are not causes. The optional bedtime reminder is a local notification scheduled on your phone (Android may ask you to allow notifications); no reminder data leaves your phone.</p>
+
+<h2 id="widgets">Home-screen widgets</h2>
+<p>Nightsay's widgets show last night's score and Doze, the app's animated moon mascot, and let you start or stop listening from your home screen. Widgets read the data already on your phone; anyone who can see your home screen can see what the widget shows. Starting from a widget opens Nightsay and starts the same recording service, with its notification.</p>
+
+<h2 id="sharing">Share cards and the weekly highlight reel</h2>
+<ul>
+<li><strong>Share cards:</strong> you can turn a night or a week into an image (PNG) showing your scores, Snore Score, time in bed, sound counts and Doze, and share it through Android's share sheet. The card has no audio. A sleep-talk quote appears on a card only if you switch it on for that card. The image is created on your phone and is sent only to the app you pick.</li>
+<li><strong>Weekly highlight reel:</strong> Nightsay can make a short video (MP4) on your phone from your own sleep-talk clips of the week. The app shows a privacy warning first, because the reel contains real audio of you and possibly others in the room. Captions (transcripts) are off by default. The reel is never shared automatically; it leaves your phone only if you tap Share and choose an app.</li>
+</ul>
+
+<h2 id="export">Backup and restore (export files)</h2>
+<p>You can export all your nights as one .zip file through Android's file picker, and save it to your phone, Google Drive or any cloud app <strong>you</strong> choose. It contains your night data (scores, stats, transcripts, tags and settings) and, if you choose (a Premium option), your recordings. We never receive this file: it is handled by the storage location you picked, under that provider's terms. Restore reads a Nightsay backup file you select and replaces the nights on your phone with the ones in the file. Keep backup files somewhere safe, because anyone with the file can open it.</p>
+
+<h2 id="auto-backup">Android Auto Backup</h2>
+<p>If you have device backup turned on, Android backs up some of the app's data to your own Google account (and copies it during a device-to-device transfer): the nights database (night data, scores, transcripts, tags and any Wear OS readings), the app's settings, badges and saved AI summaries. Recordings, the downloaded AI model, ad-consent files and widget layouts are <strong>excluded</strong>. This backup is made and stored by Google under your Google account; we cannot access it. You can turn it off in Android Settings (System &rarr; Backup, wording varies by phone) and delete it from your Google account's backup settings.</p>
+
+<h2 id="health-connect">Health Connect (optional)</h2>
+<p>Health Connect is off by default. If you turn it on in Nightsay and grant permission, each night you record is written to Health Connect on your phone as a <strong>sleep session (start and end time only)</strong>. Nightsay asks only for permission to write sleep data and <strong>reads nothing</strong> from Health Connect. Data written there is managed by Health Connect, and other apps you allow in Health Connect can read it. Turning the setting off stops new writes; sleep sessions already written stay in Health Connect until you delete them there. You can remove Nightsay's permission in Health Connect at any time. Data from Health Connect is never used for advertising, and Nightsay's use of it follows the Health Connect Permissions policy, including the Limited Use requirements.</p>
 
 <h2 id="ads">Advertising (Google AdMob)</h2>
 <p>The free version shows ads from Google AdMob on the results and history screens. Ads are never shown while recording. To show and measure ads, the Google Mobile Ads SDK collects and shares with Google:</p>
@@ -57,7 +93,7 @@
 <li>IP address (which can indicate approximate location), device model, operating system and app information;</li>
 <li>ad interactions (for example, ad views and taps) and diagnostic data about ad performance.</li>
 </ul>
-<p>Google uses this information as described in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. AdMob never receives your recordings, night data or watch sensor data.</p>
+<p>Google uses this information as described in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. AdMob never receives your recordings, night data, AI summaries, Health Connect data or watch sensor data.</p>
 <p><strong>Your choices:</strong> you can reset or delete your advertising ID, or opt out of personalized ads, in Android Settings &rarr; Privacy &rarr; Ads (on some devices: Settings &rarr; Google &rarr; Ads). You can also manage ad personalization at <a href="https://myadcenter.google.com/">My Ad Center</a>. If you are in the European Economic Area, the United Kingdom or Switzerland, the app asks for your consent through Google's consent message before personalized ads are shown, and you can change your choice later; clearing the app's storage also resets it so the consent message appears again. Buying Premium removes ads.</p>
 
 <h2 id="billing">Purchases (Google Play Billing)</h2>
@@ -75,20 +111,23 @@
 <h2 id="not-collected">What we do not collect</h2>
 <ul>
 <li>We do not receive, store or listen to your audio recordings, and we never receive heart rate or movement data from the Wear OS app.</li>
+<li>We do not receive your night data, transcripts, tags, AI summaries, backup files, share cards, reels or Health Connect data. AI summaries are generated on your phone.</li>
 <li>We do not require or create an account, and we do not collect your name, email address, contacts, photos or precise location through the app.</li>
 <li>We do not sell your personal information.</li>
 </ul>
 <p>Support requests are handled through <a href="https://github.com/chartmann1590/nightsay-site/issues">GitHub Issues</a>. Issues are public and are hosted by GitHub under <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>, so please don't include personal information, recordings or purchase details in an issue. We use what you post only to answer it, and you can ask us to delete an issue you opened.</p>
 
 <h2 id="security">Security</h2>
-<p>Your recordings stay in the app's private storage, which other apps cannot read. Communication between the app and Google's ad and billing services is encrypted in transit (HTTPS/TLS). No method of storage or transmission is completely secure, so please keep your phone protected with a screen lock.</p>
+<p>Your recordings stay in the app's private storage, which other apps cannot read. Communication between the app and Google's ad and billing services, and the one-time model download from Hugging Face, is encrypted in transit (HTTPS/TLS), and the downloaded model is checked by its SHA-256 fingerprint. No method of storage or transmission is completely secure, so please keep your phone protected with a screen lock.</p>
 
 <h2 id="retention">Data retention and deletion</h2>
 <ul>
 <li>On the free version, the app keeps your last 3 nights and automatically deletes older nights and their clips. With Premium, nights are kept until you delete them.</li>
 <li>You can delete any single clip or an entire night inside the app at any time. Deleting removes it from your phone immediately.</li>
 <li>Uninstalling the app, or clearing its storage in Android Settings &rarr; Apps &rarr; Nightsay &rarr; Storage &rarr; Clear storage, deletes all of your recordings and night data.</li>
-<li>Because we never receive your recordings, there is nothing on our side to delete. Data collected by Google AdMob is retained by Google under its own policies.</li>
+<li>The downloaded AI model and its cache stay on your phone until you delete them (Settings &rarr; Delete model) or uninstall the app.</li>
+<li>Exported backup files are your own files and stay wherever you saved them until you delete them. Sleep sessions written to Health Connect stay there until you delete them in Health Connect. Android Auto Backup copies are kept in your Google account under Google's backup settings.</li>
+<li>Because we never receive your recordings or night data, there is nothing on our side to delete. Data collected by Google AdMob is retained by Google under its own policies.</li>
 </ul>
 <p>More detail is on our <a href="https://chartmann1590.github.io/nightsay-site/delete/">data deletion page</a>.</p>
 
@@ -99,7 +138,7 @@
 <p>Depending on where you live (for example, under the GDPR in Europe or state privacy laws in the United States such as California's CCPA/CPRA), you may have the right to access, correct or delete personal information, or to object to or limit certain processing. Most data the app uses never leaves your phone and is under your control there. For anything else, <a href="https://github.com/chartmann1590/nightsay-site/issues/new">open an issue on GitHub</a> (please don't post personal data publicly; describe your request and we will follow up) and we will respond within 30 days. For data held by Google, use the tools linked above.</p>
 
 <h2 id="medical">Not a medical device</h2>
-<p>Nightsay is for entertainment and wellness only. It is not a medical device and does not diagnose, treat or monitor any condition.</p>
+<p>Nightsay is for entertainment and wellness only. It is not a medical device and does not diagnose, treat or monitor any condition. Scores, Smart insights and AI summaries are not medical information.</p>
 
 <h2 id="changes">Changes to this policy</h2>
 <p>If we change this policy, we will post the new version on this page and update the effective date above. Significant changes will also be noted in the app's release notes.</p>
